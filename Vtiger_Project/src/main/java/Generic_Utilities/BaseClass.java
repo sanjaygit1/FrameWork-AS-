@@ -44,9 +44,9 @@ public class BaseClass {
 	@BeforeClass(groups = { "smokeTest", "regressionTest" })
 	public void bc() throws Throwable {
 	
-		//reading browser value from cmd line
-	//	String BROWSER = System.getProperty("browser");
-	//	System.out.println(BROWSER);
+		//reading browser value from cmd line/jenkins
+//		String BROWSER = System.getProperty("browser");
+//		System.out.println(BROWSER);
 		
 		String BROWSER = flib.getKeyAndValueData("browser");
 		if (BROWSER.equalsIgnoreCase("chrome")) {
@@ -73,7 +73,7 @@ public class BaseClass {
    	String USERNAME = flib.getKeyAndValueData("username");
       String PASSWORD = flib.getKeyAndValueData("password");
 
-		//reading parameters from cmd
+		//reading parameters from cmd/jenkins
 //		String URL = System.getProperty("url");
 //		String USERNAME = System.getProperty("username");
 //		String PASSWORD = System.getProperty("password");
