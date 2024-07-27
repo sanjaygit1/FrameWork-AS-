@@ -45,10 +45,10 @@ public class BaseClass {
 	public void bc() throws Throwable {
 	
 		//reading browser value from cmd line/jenkins
-//		String BROWSER = System.getProperty("browser");
-//		System.out.println(BROWSER);
+		String BROWSER = System.getProperty("browser");
+		System.out.println(BROWSER);
 		
-		String BROWSER = flib.getKeyAndValueData("browser");
+	//	String BROWSER = flib.getKeyAndValueData("browser");
 		if (BROWSER.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
