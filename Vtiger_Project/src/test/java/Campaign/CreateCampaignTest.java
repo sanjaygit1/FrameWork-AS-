@@ -30,8 +30,7 @@ import objectRepository.VtigerLoginPage;
 
 public class CreateCampaignTest extends BaseClass {
 
-//Execute
-	//pass
+//Runn
 	@Test(groups = "smokeTest")
 	public void createCampaignTest() throws Throwable {
 		HomePage home = new HomePage(driver);
